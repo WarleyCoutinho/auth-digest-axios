@@ -9,7 +9,6 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "dependencies": {
-    "@mhoc/axios-digest-auth": "^0.8.0",
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
     "fastify": "^4.24.3",
