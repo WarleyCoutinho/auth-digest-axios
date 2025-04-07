@@ -30,9 +30,14 @@ class DoorControlClient {
   private password: string;
 
   constructor() {
-    this.baseUrl = process.env.DOOR_API_BASE_URL || 'http://10.10.1.214/ISAPI';
-    this.username = process.env.DOOR_API_USERNAME || 'admin';
-    this.password = process.env.DOOR_API_PASSWORD || 'Cafe@569458';
+    if (!process.env.DOOR_API_BASE_URL || !process.env.DOOR_API_USERNAME || !process.env.DOOR_API_PASSWORD) {
+      throw new Error('Missing required environment variables');
+    }
+
+    this.baseUrl = process.env.DOOR_API_BASE_URL!;
+    this.username = process.env.DOOR_API_USERNAME!;
+    this.password = process.env.DOOR_API_PASSWORD!;
+  
   }
 
   async controlDoor(doorId: number, command: string): Promise<any> {
