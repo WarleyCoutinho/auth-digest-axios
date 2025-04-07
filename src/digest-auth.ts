@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosHeaders } from "axios";
+import axios, { AxiosInstance, AxiosHeaders } from "axios";
 import crypto from "crypto";
 
 interface DigestAuthConfig {
