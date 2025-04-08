@@ -19,3 +19,17 @@ Este projeto é um sistema de autenticação que utiliza o Node.js como backend,
 - **Requisições HTTP**: Uso do Axios para realizar requisições a serviços externos, como APIs de autenticação.
 
 ## Estrutura do Projeto
+
+
+## Rota para Abrir a Porta e Testar a Autenticação Digest
+
+**POST**: `http://localhost:3000/api/door/control`
+
+### Body:
+```json
+{
+  "doorId": 1,
+  "command": "open"
+}
+
+![Exemplo de como fica a routa teste via postmam](./src/image/modelo.png)
