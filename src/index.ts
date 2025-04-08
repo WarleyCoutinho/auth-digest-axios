@@ -5,8 +5,6 @@ import { createDigestAuth } from './digest-auth';
 
 
 
-
-
 // Load environment variables
 dotenv.config();
 

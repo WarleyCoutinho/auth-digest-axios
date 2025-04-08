@@ -1,5 +1,5 @@
 {
-  "name": "door-control-api",
+  "name": "auth-digest",
   "version": "1.0.0",
   "description": "Door Control API using Fastify and Zod",
   "main": "dist/index.js",
