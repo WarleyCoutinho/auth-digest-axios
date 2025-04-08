@@ -32,4 +32,5 @@ Este projeto é um sistema de autenticação que utiliza o Node.js como backend,
   "command": "open"
 }
 
+```
 ![Exemplo de como fica a routa teste via postmam](./src/image/modelo.png)
