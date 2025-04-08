@@ -1,5 +1,5 @@
 {
-  "name": "auth-digest",
+  "name": "auth-digest-axios",
   "version": "1.0.0",
   "description": "Door Control API using Fastify and Zod",
   "main": "dist/index.js",
@@ -8,6 +8,12 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WarleyCoutinho/auth-digest-axios.git"
+  },
+  "author": "Warley Coutinho",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
